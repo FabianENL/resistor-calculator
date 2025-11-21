@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter cutoff calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="filter.js"></script>
+
+    <p><a href=index.html>resistor</a> | <a href="filter.html">filter cuttoff</a> | <a href="capacitor.html">3 number capacitor</a></p>
+    <h1>Filter cutoff frequency calculator</h1>
+    <input type="number" id="resistance_input" oninput="valueChanged()" placeholder="enter resistance">
+    <select name="resistance_multiplier" id="resistance_multiplier" onchange="valueChanged()">
+        <option value="0.001">mΩ</option>
+        <option value="1">Ω</option>
+        <option value="1000" selected>KΩ</option>
+        <option value="1000000">MΩ</option>
+        <option value="1000000000">GΩ</option>
+    </select>
+    <input type="number" id="capacitance_input" oninput="valueChanged()" placeholder="enter capacitance in F">
+    <select name="capacitance_multiplier" id="capacitance_multiplier" onchange="valueChanged()">
+        <option value="1e-12">pF</option>
+        <option value="1e-9" selected>nF</option>
+        <option value="1e-6" >uF</option>
+        <option value="1e-3" >mF</option>
+        <option value="1">F</option>
+    </select>
+    <P id="result">Result: 0</P>
+
+    <p>Highpass filter</p>
+    <img src="highpass.png" alt="high pass filter" style="width: 20%;">
+    <p>Lowpass filter</p>
+    <img src="lowpass.png" alt="low pass filter" style="width: 20%;">
+</body>
+</html>

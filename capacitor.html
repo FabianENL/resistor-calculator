@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 number capacitor calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="cap.js"></script>
+
+    <p><a href=index.html>resistor</a> | <a href="filter.html">filter cuttoff</a> | <a href="capacitor.html">3 number capacitor</a></p>
+    <h1>3 number capacitor calculator</h1>
+
+    <div class="values">
+        <div class="value">
+            <h3>number 1</h3>
+            <button onclick="up(1)">↑</button>
+            <div class="number" id="1">0</div>
+            <button onclick="down(1)">↓</button>
+        </div>
+        <div class="value">
+            <h3>number 2</h3>
+            <button onclick="up(2)">↑</button>
+            <div class="number" id="2">0</div>
+            <button onclick="down(2)">↓</button>
+        </div>
+        <div class="value">
+            <h3>multiplier 3</h3>
+            <button onclick="up(3)">↑</button>
+            <div class="number" id="3">0</div>
+            <button onclick="down(3)">↓</button>
+        </div>
+        <div class="input_box">
+            <h3>or use:</h3>
+            <input type="text" id="capacitance_input" oninput="valueChanged()" placeholder="enter capacitance in pF">
+        </div>
+    </div>
+    <div class="result">
+        <h2>result:</h2>
+        <h1 id="result">0F</h1>
+    </div>
+    <img src="cap.png" alt="capacitor" style="width: 15%; height: 15%;">
+</body>
+</html>

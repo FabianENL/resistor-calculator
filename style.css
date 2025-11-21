@@ -47,3 +47,25 @@ body{
 .legenda h3{
     border-radius: 5px;
 }
+
+p a{
+    color: rgb(31, 147, 255);
+    text-decoration: none;
+    margin: 0 1vw;
+}
+
+p a:hover{
+    color: white;
+    text-decoration: none;
+    margin: 0 1vw;
+}
+
+.values .value .number{
+    width: 90%;
+    height: 20%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+}
